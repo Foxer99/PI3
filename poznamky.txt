@@ -51,3 +51,15 @@ from . import views
 urlpatterns = [
     path('', views.index, name='index'),
 ]
+
+----------------    9. TEMPLATE -------------------
+9.1 
+-   Create an app in folder templates/appName
+-   in this folder create a html file (for ex. index.html)
+
+9.2
+-   edit views to use template (upraviť views tak aby po užíval template)
+
+def index(request):
+    return render(request, 'calculator/index.html')
+
