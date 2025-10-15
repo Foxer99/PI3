@@ -8,7 +8,9 @@
     <title>Calculator</title>
 </head>
 <body>
-    <h1>Calculator</h1>
+    <div class="nadpis">
+        <h1>Calculator</h1>
+    </div>
     <form method="post">
         {% csrf_token %}
         <input type="text" name="a">
@@ -21,6 +23,8 @@
         <input type="text" name="b">
         <hr>
         <input type="submit">
+        <br>
+        <img src={% static 'calculator/calc.png' %}>
     </form>
     <h2>{{answer}}</h2>
 </body>

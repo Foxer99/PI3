@@ -1,4 +1,15 @@
-h1
+*
 {
-    color: aqua;
+    	background-color:#08FFE3;
+}
+
+div h1
+{
+    display: flex;
+    color: palevioletred;
+    align-self: center;
+    justify-content: center;
+    justify-content: space-between;
+    font-size: 100px;
+    font-family: cursive;
 }

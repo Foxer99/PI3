@@ -61,7 +61,10 @@ urlpatterns = [
 -   edit views to use template (upraviť views tak aby po užíval template)
 
 def index(request):
-    return render(request, 'calculator/index.html')
+    sucet = 10 + 5
+    return render(request, 'calculator/index.html', dict(vysledok=vysledok))
+    (to isté)
+    return render(request, 'calculator/index.html', {"sucet":sucet, "sucin":sucin})
 
 10. CSS, obrázky (extérne)
 - vytvorit v priecinku aplikacie priecinok static/mazov app
