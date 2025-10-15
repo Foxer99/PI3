@@ -63,3 +63,15 @@ urlpatterns = [
 def index(request):
     return render(request, 'calculator/index.html')
 
+10. CSS, obrázky (extérne)
+- vytvorit v priecinku aplikacie priecinok static/mazov app
+- v tomto priecinku vytvorit CSS (napr. calculator.css)
+- do thot pricinku nakopirovat obrazky 
+- do template (index.html) doplnit:
+                                    - úplne na zaciatok {% load static %}
+                                    - do hlavicky odkaz na style (calculator.css)
+                                    <head>
+                                        <link rel="stylesheet" href="{% static 'calculator/calculator.css' %}">
+                                    </head>
+- obrazok vlozit:
+<img src={% static 'calculator/calculator.png' %}>
